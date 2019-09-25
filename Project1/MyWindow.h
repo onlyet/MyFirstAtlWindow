@@ -70,12 +70,12 @@ protected:
 // Our main window
 
 class CMyWindow : public CWindowImpl<CMyWindow, CWindow, CFrameWinTraits>,
-    public CPaintBkgnd<CMyWindow, RGB(0, 0, 255)>
+    public CPaintBkgnd<CMyWindow, RGB(0, 0, 41)>
 {
 public:
     DECLARE_WND_CLASS(_T("My Window Class"))
 
-    typedef CPaintBkgnd<CMyWindow, RGB(0, 0, 255)> CPaintBkgndBase;
+    typedef CPaintBkgnd<CMyWindow, RGB(0, 0, 41)> CPaintBkgndBase;
 
     BEGIN_MSG_MAP(CMyWindow)
         MESSAGE_HANDLER(WM_CREATE, OnCreate)
